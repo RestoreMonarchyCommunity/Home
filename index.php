@@ -12,8 +12,7 @@
 					    <div class="text-middle">
 						    <h1>Welcome to Restore Monarchy</h1>
 						    <p class="under-h1">Simplicity over Complexity!</p>
-						    <hr class="hrdivider helper">
-						
+						    <hr class="hrdivider helper" />
 						    <div class="button-menu">
 							    <a href="https://github.com/RestoreMonarchyPlugins">
 									<button class="button"><i class="fab fa-github"></i> <span class="upper upper1">Check Our Github</span></button>

@@ -5,11 +5,14 @@
             <div class="rm-logo"><a href="##"><img src="logo.png" alt="rm-logo" style="width: 85%;" /></a></div>
             <div class="mainlinks">
                 <span class="colum-new">
-                    <a href="/">Home</a>
+                    <a href="index.php">Home</a>
                 </span>
                 <span class="colum">
                     <a href="http://docs.restoremonarchy.com/">Docs</a>
                 </span>
+                <span class="colum-new">
+				    <a href="team.php">Team</a>
+				</span>
                 <span class="colum-new">
 				    <a href="https://github.com/RestoreMonarchyCommunity/Home">Github</a>
 				</span>
