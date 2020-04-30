@@ -338,7 +338,7 @@ hr.hrdivider {
 		font-size: 0;
 	}
 	.upper2:before {
-		content: 'Servers';
+		content: 'ImperialPlugins';
 		font-size: 16px;
 	}
 }
