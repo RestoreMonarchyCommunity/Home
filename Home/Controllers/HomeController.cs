@@ -33,6 +33,11 @@ namespace RestoreMonarchy.Home.Controllers
             return View();
         }
 
+        public IActionResult Plugins()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
