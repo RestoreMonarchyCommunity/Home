@@ -34,6 +34,11 @@ namespace RestoreMonarchy.Home.Controllers
             return View();
         }
 
+        public IActionResult Discord()
+        {
+            return Redirect("https://discord.gg/jYMANN2");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
