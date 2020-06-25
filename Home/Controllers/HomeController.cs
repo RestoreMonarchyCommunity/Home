@@ -19,21 +19,25 @@ namespace RestoreMonarchy.Home.Controllers
             return View();
         }
 
+        [Route("team")]
         public IActionResult Team()
         {
             return View();
         }
 
+        [Route("projects")]
         public IActionResult Projects()
         {
             return View();
         }
 
+        [Route("plugins")]
         public IActionResult Plugins()
         {
             return View();
         }
 
+        [Route("discord")]
         public IActionResult Discord()
         {
             return Redirect("https://discord.gg/jYMANN2");
