@@ -40,7 +40,7 @@ namespace RestoreMonarchy.Home.Controllers
         [Route("discord")]
         public IActionResult Discord()
         {
-            return Redirect("https://discord.gg/jYMANN2");
+            return Redirect("https://discord.gg/Z3BWae5");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
