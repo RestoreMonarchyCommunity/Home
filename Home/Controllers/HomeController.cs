@@ -34,7 +34,7 @@ namespace RestoreMonarchy.Home.Controllers
         [Route("plugins")]
         public IActionResult Plugins()
         {
-            return View();
+            return Redirect("https://plugins.restoremonarchy.com");
         }
 
         [Route("discord")]
