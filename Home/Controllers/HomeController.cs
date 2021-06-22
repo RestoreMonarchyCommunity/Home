@@ -34,7 +34,7 @@ namespace RestoreMonarchy.Home.Controllers
         [Route("plugins")]
         public IActionResult Plugins()
         {
-            return Redirect("https://plugins.restoremonarchy.com");
+            return Redirect("https://plugins.restoremonarchy.com"); 
         }
 
         [Route("discord")]
@@ -43,6 +43,12 @@ namespace RestoreMonarchy.Home.Controllers
             return Redirect("https://discord.gg/Z3BWae5");
         }
 
+        [Route("github")]
+        public IActionResult Github()
+        {
+            return Redirect("https://github.com/RestoreMonarchy");
+        }
+        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

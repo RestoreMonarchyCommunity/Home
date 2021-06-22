@@ -5,43 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - RestoreMonarchy</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/css/site.css" />
+
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="/img/Logo.png" alt="" width="30" height="30">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="/">
+                    <div>
+                        <img src="/img/Logo.png" width="40" height="40">
+                    </div>
+                    <div class="ms-2">
+                        Restore Monarchy
+                    </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarToggler">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse " id="navbarToggler">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                                <i class="bi bi-house-door"></i> Home
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Team">Team</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Team">
+                                <i class="bi bi-people"></i> Team
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Plugins">Plugins</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" target="_blank" asp-area="" asp-controller="Home" asp-action="Discord">Discord</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Projects">
+                                <i class="bi bi-code-slash"></i> Projects
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container mt-5">
+    <div class="container mt-4">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -49,12 +55,13 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2020 - RestoreMonarchy.com</a>
+            © @DateTime.Now.Year Restore Monarchy - All rights reserved
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
     @RenderSection("Scripts", required: false)
 </body>
 </html>
