@@ -28,18 +28,13 @@
                 <div class="collapse navbar-collapse " id="navbarToggler">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
-                                <i class="bi bi-house-door"></i> Home
+                            <a class="nav-link" href="#unturnedstore">
+                                <i class="bi bi-code-slash"></i> Unturned Store
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Team">
-                                <i class="bi bi-people"></i> Team
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Projects">
-                                <i class="bi bi-code-slash"></i> Projects
+                            <a class="nav-link" href="#shearlegs">
+                                <i class="bi bi-code-slash"></i> Shearlegs
                             </a>
                         </li>
                     </ul>
@@ -47,8 +42,8 @@
             </div>
         </nav>
     </header>
-    <div class="container mt-4">
-        <main role="main" class="pb-3">
+    <div>
+        <main role="main">
             @RenderBody()
         </main>
     </div>
